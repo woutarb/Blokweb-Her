@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="DFDS verhalen website">
+    <meta name="author" content="Wouter Bijnsdorp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/inlogstyle.css">
+    <title>Login of maak een nieuw account</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <!-- Bron: Icon van https://www.dfdsseaways.nl/ gecropt -->
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/dfdstories.png" alt="logo DFDStories site"></a>
+        <ul id='closed'>
+            <li><input type=search placeholder="Zoeken"></li>
+            <li><a href="loginsignup.html">Favorieten</a></li>
+            <li><a href="loginsignup.html">Profiel</a></li>
+        </ul>
+        <img src="images/hamburger.png" alt="menu button">
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Bestaande gebruiker</legend>
+                <label for="email">E-mailadres</label>
+                <input type="email" name="gebruikersmail" id="email" required>
+                <label for="password">Wachtwoord</label>
+                <input type="password" name="wachtwoord" id="password" required>
+                <a href="loginsignup.html">Wachtwoord vergeten?</a>
+                <button type="submit" value="login">LOGIN</button>
+            </fieldset>
+            <fieldset>
+                <legend>Nieuw bij DFDS?</legend>
+                <button type="submit" value="newacc">MAAK EEN NIEUW ACCOUNT</button>
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <legend>Maak een nieuw account</legend>
+                <label for="email">E-mailadres</label>
+                <input type="email" name="nieuwgebruikersmail" id="newMail" required>
+                <label for="ww">Nieuw wachtwoord</label>
+                <input type="password" name="nieuwwachtwoord" id="ww" required>
+                <label for="ww2">Bevestig je wachtwoord</label>
+                <input type="password" name="bevestignieuwwachtwoord" id="ww2" required>
+                <input type="checkbox" name="voorwaarden" id="policy" required>
+                <label for="policy">Ja, ik accepteer DFDS privacy policy</label>
+                <input type="checkbox" name="nieuwsbrief" id="newsletter">
+                <label for="newsletter">Ja, ik wil graag de nieuwsbrief ontvangen</label>
+                <button type="submit" value="makeAccount">INSCHRIJVEN</button>
+            </fieldset>
+        </form>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
